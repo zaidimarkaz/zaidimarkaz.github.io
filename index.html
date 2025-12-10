@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Zaidimarkaz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loaderScreen">
+  <div class="circ">
+    <div class="load">zaizafona . . . </div>
+    <div class="hands"></div>
+    <div class="body"></div>
+    <div class="head"><div class="eye"></div></div>
+  </div>
+</div>
+
+<div class="container">
+
+
+    <div class="word">
+        <h2>Canal </h2>
+        <input id="userWord" type="text" autocomplete="off">
+        <button onclick="checkWord()">Valider</button>
+    </div>
+    <div id="result"></div>
+</div>
+<script src="loader.js"></script>
+
+<script>
+function checkWord() {
+    let w = document.getElementById("userWord").value;
+    
+    // nettoyage complet
+    w = w.replace(/\s+/g, "").toLowerCase();
+
+    // mots acceptés
+    const correctWords = ["+", "plus", "t+", "tplus"];
+
+    if(correctWords.includes(w)){
+        
+        // 🔥 Hide the word block
+        document.querySelector(".word").style.display = "none";
+
+        // Show boxes
+        document.getElementById("result").innerHTML = `
+        <div class='boxes'>
+            <a href='beldia.html'><div class='box'>BELDIA</div></a>
+            <a href='urbain.html'><div class='box'>URBAIN</div></a>
+        </div>`;
+    } 
+    else {
+        document.getElementById("result").innerHTML =
+        "<p style='color:red;'>Mot incorrect !</p>";
+    }
+}
+
+</script>
+
+</body>
+</html>
