@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3omor.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="wrap">
+
+    <div class="card">
+      <h1 class="omor">.3omor</h1>
+      <div class="grid">
+
+        <div class="field">
+          <label for="birth">تاريخ الميلاد</label>
+          <input id="birth" type="date" value="2000-01-01" />
+        </div>
+
+        <div class="field">
+          <label for="pivot">تاريخ الميلاد الجديد (المحور)</label>
+          <input id="pivot" type="date" value="2024-09-04" />
+        </div>
+
+        <div class="field small">
+          <label for="accYears">مدة التسريع (بالسنوات N)</label>
+          <input id="accYears" type="number" min="0" step="1" value="2" />
+        </div>
+
+        <div class="field small">
+          <label for="mult">المضاعِف (100 = سنة تصبح قرناً)</label>
+          <input id="mult" type="number" min="1" step="1" value="100" />
+        </div>
+
+
+      </div> <!-- ✅ close grid -->
+
+      <div class="actions">
+        <button id="calc">احسب</button>
+      </div>
+    </div> <!-- ✅ close card -->
+
+    <div class="card out">
+      <div class="result">
+        <div class="title">العمر الحقيقي</div>
+        <div id="normal">—</div>
+        <div id="normalMeta" class="muted">—</div>
+      </div>
+
+      <div class="result">
+        <div class="title">العمر الجديد المتسارع</div>
+        <div id="newAge">—</div>
+        <div id="newMeta" class="muted">—</div>
+      </div>
+
+      <div class="result">
+        <div class="title">العمر الإجمالي (العادي + المتسارع)</div>
+        <div id="totalAge">—</div>
+        <div id="totalMeta" class="muted">—</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

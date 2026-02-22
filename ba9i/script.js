@@ -5,29 +5,32 @@
     // Fin totale de l'année scolaire
     window.onload = function(){
 
-    const FIN_ANNEE = new Date("2026-07-01");
+    const FIN_ANNEE = new Date("2026-06-30");
 
         const EVENTS = [
         // i
         { type: "i", debut: "2025-11-16", fin: "2025-11-28", couleur: "rgba(0, 0, 255, 0.1)" }, // blue transparent
         { type: "i", debut: "2026-01-18", fin: "2026-01-30", couleur: "rgba(0, 0, 255, 0.1)" }, // blue transparent
         { type: "i", debut: "2026-03-02", fin: "2026-03-13", couleur: "rgba(0, 0, 255, 0.1)" }, // blue transparent
-        { type: "i", debut: "2026-05-28", fin: "2026-06-12", couleur: "rgba(0, 0, 255, 0.1)" }, // blue transparent
-
-        // g
-        { type: "g", debut: "2026-03-22", fin: "2026-04-03", couleur: "rgba(0, 128, 0, 0.1)" }, // green transparent
-
+        { type: "i", debut: "2026-04-28", fin: "2026-05-12", couleur: "rgba(0, 0, 255, 0.1)" }, // blue transparent
 
         // s
-        { type: "s", debut: "2026-04-14", fin: "2026-04-24", couleur: "rgba(255, 0, 0, 0.1)" }, // red transparent
+        { type: "s", debut: "2026-04-12", fin: "2026-04-22", couleur: "rgba(255, 0, 0, 0.1)" }, // red transparent
+
          // c
         { type: "c", debut: "2026-04-24", fin: "2026-04-28", couleur: "rgba(230, 255, 0, 0.1)" }, // yelllow transparent
+
+        // v
         { type: "v", debut: "2025-12-31", fin: "2026-01-01", couleur: "rgba(240, 0, 255, 0.1)" }, // purple transparent
         { type: "v", debut: "2026-01-10", fin: "2026-01-11", couleur: "rgba(240, 0, 255, 0.1)" }, // purple transparent
         { type: "v", debut: "2026-01-13", fin: "2026-01-14", couleur: "rgba(240, 0, 255, 0.1)" }, // purple transparent
-        { type: "v", debut: "2026-03-19", fin: "2026-03-21", couleur: "rgba(240, 0, 255, 0.1)" }, // purple transparent
+        { type: "v", debut: "2026-03-20", fin: "2026-03-22", couleur: "rgba(240, 0, 255, 0.1)" }, // purple transparent
         { type: "v", debut: "2026-05-26", fin: "2026-05-30", couleur: "rgba(240, 0, 255, 0.1)" }, // purple transparent
         { type: "v", debut: "2026-06-16", fin: "2026-06-17", couleur: "rgba(240, 0, 255, 0.1)" }, // purple transparent
+
+
+         // g
+        { type: "g", debut: "2026-03-22", fin: "2026-04-03", couleur: "rgba(0, 128, 0, 0.1)" }, // green transparent
 
         ];
 
