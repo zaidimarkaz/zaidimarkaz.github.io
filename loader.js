@@ -12,5 +12,5 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       loader.style.display = "none";
     }, 500); // temps de fade-out
-  }, 20000); // durée obligatoire d'affichage
+  }, 2000); // durée obligatoire d'affichage
 });
